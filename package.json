@@ -1,0 +1,26 @@
+{
+  "name": "AstraUI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "node ./scripts/preinstall"
+  },
+  "keywords": [],
+  "author": "guxin",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.16.1",
+    "@vitejs/plugin-vue": "^4.2.0",
+    "@vue/compiler-sfc": "^3.2.47",
+    "sass": "^1.62.1",
+    "typescript": "^5.0.4",
+    "vite": "^4.3.1",
+    "vue": "^3.2.36"
+  },
+  "dependencies": {
+    "@astra/components": "workspace:^",
+    "@astra/utils": "workspace:^",
+    "astra-ui": "workspace:^"
+  }
+}
