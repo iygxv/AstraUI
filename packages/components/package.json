@@ -2,5 +2,13 @@
   "name": "@astra/components",
   "version": "1.0.0",
   "license": "MIT",
-  "main": "index.ts"
+  "main": "./index.ts",
+  "scripts": {
+    "test": "vitest",
+    "coverage": "vitest run --coverage",
+    "build": "vite build"
+  },
+  "devDependencies": {
+    "@vitest/coverage-c8": "^0.30.1"
+  }
 }

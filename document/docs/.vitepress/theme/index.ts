@@ -1,6 +1,7 @@
 // https://vitepress.dev/guide/custom-theme
 import Theme from 'vitepress/theme'
-import './style.css'
+import './index.scss'
+import './demo-block.scss'
 
 // 主题样式
 import 'vitepress-theme-demoblock/dist/theme/styles/index.css'
