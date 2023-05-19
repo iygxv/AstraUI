@@ -1,0 +1,4 @@
+**.d.ts
+/packages/astra-ui
+dist
+node_modules

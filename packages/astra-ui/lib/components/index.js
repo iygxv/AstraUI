@@ -1,1 +1,0 @@
-"use strict";Object.defineProperties(exports,{__esModule:{value:!0},[Symbol.toStringTag]:{value:"Module"}});require("../styles/src/index.scss.js");const n=require("./button/index.js"),o=[n.default],r=t=>{o.forEach(e=>{t.component(e.name,e)})},s={install:r};exports.default=s;

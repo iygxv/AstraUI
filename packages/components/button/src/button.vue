@@ -1,54 +1,49 @@
 <template>
-  <div 
-  class="astra__button" 
+  <div
+  class="astra__button"
   :class="[
       'astra__button--' + type,
       { 'is-plain': plain, 'is-disabled': disabled, 'is-round': round },
       'astra__button--size-' + size,
     ]"
     :disabled="disabled"
-    @click="handlerClick" >
+    @click="handleClick" >
     <i v-if="icon !== ''" :class="icon"></i>
     <slot></slot>
+    {{ msg }}
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue';
 export default defineComponent({
-  name: "astraButton",
+  name: 'astraButton'
 });
 </script>
 
 <script setup lang="ts">
-import { ref } from "vue";
-let props = defineProps({
+import { ref } from 'vue';
+defineProps({
   type: {
     type: String,
-    default: "default",
+    default: 'default'
   },
   size: {
     type: String,
-    default: "default",
+    default: 'default'
   },
   icon: {
     type: String,
-    default: "",
+    default: ''
   },
   plain: Boolean,
   disabled: Boolean,
-  round: Boolean,
+  round: Boolean
 });
-let msg = ref("button");
-let emit = defineEmits(["click"]);
-let handlerClick = () => {
-  emit("click", {
-    type: props.type,
-    size: props.size,
-    plain: props.plain || false,
-    disabled: props.disabled || false,
-    round: props.round || false,
-  });
-};
+const msg = ref('button');
+const emit = defineEmits(['click']);
+const handleClick = (evt: MouseEvent) => {
+  emit('click', evt);
+}
 </script>
 
 <style lang="scss" scope>

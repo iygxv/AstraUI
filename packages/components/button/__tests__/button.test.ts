@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
+// https://v1.test-utils.vuejs.org/zh/guides/
 import { mount } from '@vue/test-utils';
 import button from '../src/button.vue';
 describe('Button.vue', () => {

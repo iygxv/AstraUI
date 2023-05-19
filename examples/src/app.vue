@@ -1,5 +1,5 @@
 <template>
-   <astra-button />
+  <astra-button type="primary">主要按钮</astra-button>
    <div class="box">
       <span>123</span>
    </div>
