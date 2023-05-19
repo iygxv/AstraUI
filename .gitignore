@@ -9,7 +9,10 @@ lerna-debug.log*
 # 依赖
 node_modules/
 
+
+coverage/
+
 # 打包文件
-dist
-cjs
-esm
+dist/
+cjs/
+esm/
